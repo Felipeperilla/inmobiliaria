@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03-mar-2017, 8:34:40
+    Author     : ADSI
+*/
+
+/* Curso JavaScript estilos aprenderaprogramar.com*/
+body {font-family: Arial, Helvetica, sans-serif; background:#fff }
+ 
+table { font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif; font-size: 12px;  width: 100px;
+    text-align: center; border-collapse: collapse; }
+ 
+th { font-size: 13px; font-weight: normal; padding: 8px; background: #b9c9fe; border-top: 4px solid #aabcfe;
+    border-bottom: 1px solid #fff; color: #039; }
+ 
+td { padding: 8px; background: #e8edff; border-bottom: 1px solid #fff; color: #669; border-top: 1px solid transparent; }
+ 
+tr:hover td { background: #d0dafd; color: #339; }
+ 
+.bot {color: blue; cursor:pointer;}
+ 
+#contenedorForm {margin-left: 45px; font-size:12px;}
+ 
+.boton {   color: black; padding: 5px; margin: 10px;
+  background-color: #b9c9fe;
+  font-weight: bold; }
+
+
+input[type=search] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    height: 30px;
+    width: 300px;
+    background: #fff;
+    color: orangered;
+}
+
+.ordernar{
+    
+    margin-right: 30px;
+    margin-left: 30px;
+}

@@ -1,0 +1,130 @@
+html{
+	height: 100%;
+	width: 100%;
+}
+
+h1{
+	font-size:20px;
+	height: 50px;
+	display:inline-block;
+}
+
+p{
+	height: 50px;
+	margin-bottom: 0px;
+	padding: 
+}
+
+a img{
+	width:25px; 
+}
+
+
+#titulo_predio{
+	width: 200px;
+}
+
+#caja_titulo_predio{
+	width: 50%;
+	height:60px;
+	padding: 15px;
+}
+
+#barra_icono{
+	padding: 0px;
+}
+
+#icono{
+	margin-left:20px;
+}
+
+#body_2{
+	background: rgb(233,235,238);
+	height:570px; 
+	margin-top: 0px;
+	padding-top:0px;
+}
+
+
+
+.container{
+	height:140px;
+}
+
+
+#zona_publicacion{
+	background:white;
+	width:50%
+	height:540px;
+	margin:15px auto;
+	border:1px solid;
+	border-color: rgb(235,235,234);
+	border-radius:6px;
+	border-style: outset;
+	
+
+}
+#icono_publicacion{
+	display: inline;
+	width:5%;
+}
+#titulo_publicacion{
+	display: inline;
+	width:20%
+}
+
+
+.center-block{
+	width: 500px;
+}
+/*aqui esta el menu y la barra de scroll */
+
+#barra_scroll{
+	height:200px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+#submenu_categorias a{
+	background: rgb(251,188,5);
+	padding-left:0px;
+	padding-right:30px; 
+}
+
+#categorias_izquierda{
+	width: 312px;
+	margin-right:120px;
+}
+
+#submenu_categorias a{
+	background: rgb(251,188,5);
+}
+#submenu_categorias a:hover{
+	background: rgb(247,148,30);
+}
+
+/*aqui va el contenido a mostrar de los predios */
+
+main{
+	padding-right:0px;
+	padding-left: 0px;
+	height: 460px;
+	overflow-y: auto;
+	display: inline;	
+	border:2px solid;
+	border-color:#ccc;
+	border-radius:6px;
+	border-style: outset;
+}
+
+#contenido{
+	padding:1px;
+
+}
+
+#titulo_contenido{
+	font-size:15px;
+}
+#imagen_contenido{
+	width: 100%;
+	height: 60%;
+}

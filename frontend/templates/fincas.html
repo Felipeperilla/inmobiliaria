@@ -1,0 +1,72 @@
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+    <br>
+    <div class="row" >
+        <section class="center-block" class="row"  id="caja_titulo_predio">
+            <h1  id="titulo_predio" class="col-lg-6 hidden-s hidden-xs hidden-md ">Fincas : <p id="separador" class="pull-right"> | </p></h1>
+            <div id="barra_icono" class="col-lg-6 col-xs-6">
+                <img src="iconos/casa2.png" width="30" id="icono">
+            </div>
+        </section>			
+    </div>
+
+    <form class="filtros_busqueda" method="post">
+        <div class="row">	
+            
+                <div class="col-xs-12 col-sm-10 col-md-9 col-lg-2">                    
+                    <!--CODIGO LISTAR POR DEPARTAMENTOS Y CIUDADES -->
+                    <label for="departaments" class="control-label col-xs-12 col-sm-2 col-md-2 col-lg-2" id="titulos_filtros">Departamentos:</label>
+                    <select  class="form-control" ng-model="idDepartamento" ng-change="cargarMunicipios()" name="select_departamento" id="filtros_busqueda" >
+                        <option ng-repeat="item in departamentos" value="{{item.id_departamento}}">{{item.nombre_departamento}}</option>
+                    </select>  
+                </div>  
+                <div class="col-xs-12 col-sm-10 col-md-9 col-lg-2">
+                    <label for="departaments" class="control-label col-xs-12 col-sm-2 col-md-2 col-lg-2" id="titulos_filtros">Ciudad:</label>                
+                    <select  class="form-control" name="select_municipio" id="filtros_busqueda" >
+                        <option ng-repeat="item in municipios" value="{{item.id_ciudad}}">{{item.nombre_ciudad}}</option>
+                    </select>                    
+                </div>   
+        </div>
+    </form>
+    <section class="container">
+        <div class="row" >
+                <aside id="categorias_izquierda" class=" col-lg-3">
+                        <h2>Categorias</h2>
+                                        <div class="list-group" id="submenu_categorias">
+                                                <a href="casas.html" class="list-group-item"><img src="iconos/casaInmobiliaria.png" width="25"> Casas</a>
+                                                <a href="apartamentos.html" class="list-group-item"><img src="iconos/edifice.png" width="25"> Apartamentos</a>
+                                                <a href="lotes.html" class="list-group-item"><img src="iconos/IcoLote.png" width="25"> Lotes</a>
+                                                <a href="fincas.html" class="list-group-item"><img src="iconos/finca.png" width="25"> Fincas</a>
+                                        </div>
+
+                                        <div id="barra_scroll">									
+                                                <a href="https://www.facebook.com/tuplaceapp/" class="list-group-item">
+                                                        <h3 class="list-group-item-heading">Encuentranos en Facebook</h3>
+                                                        <p class="list-group-item-text">Visita nuestras publicaciones en Facebook</p>
+                                                        <img src="iconos/facebook.png" width="27">
+                                                </a>
+
+                                                <a href="contactos.html" class="list-group-item">
+                                                        <h3 class="list-group-item-heading">Interactua en nuestras redes sociales</h3>
+                                                        <p class="list-group-item-text">
+                                                        Visualiza Videos, imagenes,publicaciones de finca raiz! 
+                                                        </p>
+                                                        <img src="iconos/youtube.png" width="27">
+                                                        <img src="iconos/Instagram.png"width="27">
+                                                        <img src="iconos/twiter.png"width="27">
+                                                        <img src="iconos/whatsaap.png"width="27">
+                                                </a>
+                                        </div>
+                </aside>
+                <main id="contenido" class="col-lg-7 col-xs-12">
+					
+                </main>
+        </div>					
+    </section>

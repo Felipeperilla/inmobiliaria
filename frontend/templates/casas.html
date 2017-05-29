@@ -1,0 +1,133 @@
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+    <br>
+    <div class="row" >
+        <section class="center-block" class="row"  id="caja_titulo_predio">
+            <h1  id="titulo_predio" class="col-lg-6 hidden-sm hidden-xs hidden-md ">Casas 
+            <p id="separador" class="pull-right"> | </p>
+            </h1>
+            <div id="barra_icono" class="col-lg-6 col-xs-6">
+                <img src="iconos/casa2.png" width="30" id="icono">
+            </div>
+        </section>          
+    </div>
+
+    <form class="filtros_busqueda" method="post"><!--CODIGO LISTAR POR DEPARTAMENTOS Y CIUDADES -->
+        <div class="row">               
+                <div class="col-xs-12 col-sm-10 col-md-9 col-lg-2">                       
+                    <label for="departaments" class="control-label col-xs-12 col-sm-2 col-md-2 col-lg-2" id="titulos_filtros">Departamentos:</label>
+                    <select  class="form-control" ng-change="cargarMunicipios()" ng-model="idDepartamento" name="select_departamento" id="filtros_busqueda" >
+                        <option ng-repeat="item in departamentos" value="{{item.id_departamento}}">{{item.nombre_departamento}}</option>
+                    </select>  
+                </div>  
+                <div class="col-xs-12 col-sm-10 col-md-9 col-lg-2">
+                    <label for="citys" class="control-label col-xs-12 col-sm-2 col-md-2 col-lg-2" id="titulos_filtros">Ciudad:</label>                
+                    <select  class="form-control" ng-change="filtroCiudad()" ng-model="idCiudad"  name="select_municipio" id="filtros_busqueda" >
+                        <option ng-repeat="item in municipios" value="{{item.id_ciudad}}">{{item.nombre_ciudad}}</option>
+                    </select>                    
+                </div>   
+        </div>
+    </form>
+    <section class="container"><!--contenido de la pagina imagenes y filtros.-->
+        <div class="row" >
+                <aside id="categorias_izquierda" class=" col-lg-3"><!-- contenido pertinente para la pagina enlace de redes sociales y filtros de busqueda-->
+                        
+                                        <form class="list-group" id="submenu_categorias">
+                                                <h4>Precio 
+                                                    <img src="iconos/semilla.png" width="25">            
+                                                </h4>
+                                                <select class="list-group-item" ng-model="eleccion_precio"> 
+                                                    <option value="PRECIO">Menor a Mayor</option>
+                                                    <option value="-PRECIO">Mayor a Menor</option>
+                                                </select>
+                                                
+                                                <h4>Area 
+                                                    <img src="iconos/IcoLote.png" width="25">       
+                                                </h4>   
+                                                <select class="list-group-item" ng-model="eleccion_area"> 
+                                                    <option value="AREA">Menor a Mayor</option>
+                                                    <option value="-AREA">Mayor a Menor</option>
+                                                    </select>   
+
+                                                <h4>Tipo de oferta
+                                                    <img src="iconos/finca.png" width="25">          
+                                                </h4>
+                                                <label class="radio-inline">
+                                                <input type="radio" name="eleccion_oferta" ng-model="eleccion_oferta" value="Venta">Venta</label>
+                                                <label class="radio-inline">
+                                                <input type="radio" name="eleccion_oferta" ng-model="eleccion_oferta" value="Permuta">Permuta</label>
+                                                <label class="radio-inline">
+                                                <input type="radio" name="eleccion_oferta" ng-model="eleccion_oferta" value="Empeno">Empeño</label>
+                                                <label class="radio-inline">
+                                                <input type="radio" name="eleccion_oferta" ng-model="eleccion_oferta" value="">Ninguno</label>                         
+                                        </form>
+
+                                        <div id="barra_scroll">                                 
+                                                <a href="https://www.facebook.com/tuplaceapp/" class="list-group-item">
+                                                        <h3 class="list-group-item-heading">Encuentranos en Facebook</h3>
+                                                        <p class="list-group-item-text">Visita nuestras publicaciones en Facebook</p>
+                                                        <img src="iconos/facebook.png" width="27">
+                                                </a>
+
+                                                <a href="contactos.html" class="list-group-item">
+                                                        <h3 class="list-group-item-heading">Interactua en nuestras redes sociales</h3>
+                                                        <p class="list-group-item-text">
+                                                        Visualiza Videos, imagenes,publicaciones de finca raiz! 
+                                                        </p>
+                                                        <img src="iconos/youtube.png" width="27">
+                                                        <img src="iconos/Instagram.png" width="27">
+                                                        <img src="iconos/twiter.png" width="27">
+                                                        <img src="iconos/whatsaap.png" width="27">
+                                                </a>
+                                        </div>
+                </aside>
+            <div class="imagenes">
+                <main id="contenido" class="col-md-9 col-xs-12 col-md-offset-1" ng-repeat="item in inmueblesCiudad | orderBy:eleccion_precio | orderBy:eleccion_area | filter:eleccion_oferta ">
+                    <div id="slide-{{item.ID_INMUEBLE}}" class="carousel slide" data-ride="carousel" >
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#slide-{{item.ID_INMUEBLE}}" data-slide-to="0" class="active"></li>
+                            <li data-target="#slide-{{item.ID_INMUEBLE}}" data-slide-to="1"></li>
+                            <li data-target="#slide-{{item.ID_INMUEBLE}}" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item" ng-class="{'active' : $index==0}" ng-repeat="foto in item.fotos track by $index">
+                                <img ng-src="{{foto.nombre_imagen}}" alt="Img" style="width:600px;" >
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#slide-{{item.ID_INMUEBLE}}" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#slide-{{item.ID_INMUEBLE}}" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>  
+                </main>
+            </div>
+        </div>                  
+    </section>
+
+
+    <style>
+        .imagenes{            
+            height:550px;
+            overflow:auto; 
+        }
+        #contenido{
+            
+        }
+
+    </style>

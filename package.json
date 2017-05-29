@@ -1,0 +1,19 @@
+{
+  "name": "fincaraiz",
+  "version": "1.0.0",
+  "private": true,
+  "description": "App para gestiona bienes raices",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-route": "^1.6.2",
+    "angular-ui-bootstrap": "^2.5.0",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}

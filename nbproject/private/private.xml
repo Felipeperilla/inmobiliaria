@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>frontend/templates/casas.html</url>
+            <bookmark id="1">
+                <name/>
+                <line>3</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/fincaraiz/frontend/estilos/formularios/formoid-solid-red.css</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/Inmueble/procesar_inmueble.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/Inmueble/Listar_Inmueble_Fac.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/Facturas/excel.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/Clientes/CrearCliente.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/Inmueble/excel.inmueblesdis.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/Inmueble/Listar_Inmueble.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/Clientes/ListarClientes_1.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/controlador_comprobar.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/frontend/HeadSecretaria.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/Administrador/VerAdministrador.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/frontend/index_secretaria.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/Facturas/CrearFactura.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/frontend/fotos/13.jpg</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/Administrador/CrearAdministrador.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/frontend/estilos/estilo_principal.css</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/frontend/HeadSuperAdministrador.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/Clientes/EliminarCliente.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/procesar_login.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/Facturas/ListarFacturas.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/Clientes/excel.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/frontend/fotos/11.jpg</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/Inmueble/excel.inmueblesfac.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/frontend/HeadAdministrador.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/Clientes/ListarClientes.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/Clientes/DaoCliente.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/iniciar_sesion.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/Inmueble/procesar_inmueble_Fac.php</file>
+            <file>file:/C:/xampp/htdocs/fincaraiz/backend/Secretaria/CrearSecretaria.php</file>
+        </group>
+    </open-files>
+</project-private>

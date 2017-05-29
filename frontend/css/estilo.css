@@ -1,0 +1,151 @@
+/*-- header --*/
+.container-fluid{
+	padding: 0px;
+	margin: 0px;	
+	background-color: white;
+
+}
+
+#caja_titulo_movil{
+	padding: 0px;
+}
+
+.letra_titulo{
+	font-family:cursive;
+	font-style:italic;
+}
+
+#titulo_movil{	
+	width:270px;
+	margin:5px auto; 
+	border-bottom:3px solid #ccc;
+}
+
+#fijar_movil{
+	margin-top: 0px;
+}
+
+#imagen_chimenea{
+	width:50px;
+}
+
+.container-menu{
+	padding: 0px;
+}
+
+#div_fila{
+	margin: 0px;
+	width: 100%;
+}
+
+#jumbotron{
+	margin-top:0px; 
+	background:#ff0000;
+	color:#ff0000;
+	padding:0px 0px;
+	margin-bottom: 12px;
+	height: 135px;
+
+}
+
+.jumbotron .h1{
+	font-size: 38px;
+	margin-bottom: 0px;
+	font-family:vertical;
+	padding: 10px 5px;
+	color: black;
+}
+
+.jumbotron .p{
+	font-family: verdana;
+	font-size: 12px;
+	margin-bottom: 0px;
+	padding-left:10px;
+	
+}
+
+
+#bridge{
+	margin-left: 100px;
+
+}
+
+
+
+.container-f{
+	padding-bottom:-10px;
+}
+
+.nav li a{
+	margin-top: 5px;
+	margin-bottom:5px;
+}
+
+
+
+/*video*/
+
+.main{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding-bottom: 5px;	
+	border-bottom: 1px solid #ccc;
+	background: white;
+	height: 475px;
+}
+
+#desc_video{
+	margin-bottom:0px;
+}
+
+.thumb{
+	margin-top: 15px;
+	width: 750px;
+	padding: 0px;
+	margin-right: 100px;
+}
+/*aside*/
+h2{
+	font-size:19px; 
+	margin-top: 14px;
+}
+
+#submenu_categorias a{
+	background: rgb(254,43,26);
+}
+#submenu_categorias a:hover{
+	background: rgb(254,57,42);
+}
+
+ 
+
+ #submenu_categorias a:{
+	background: rgb(247,148,30);
+	margin-bottom: 0px;
+
+}
+
+#categoriasInicio{
+	margin-left:0px;
+	height: 440px;
+	padding: 0px;
+}
+
+#barra_scroll{
+	height:200px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+
+body{
+	margin-right:-15px;
+	background: rgb(233,235,238);
+	width: 100%;
+}
+
+/*iconos*/
+
+a img{
+	width:25px; 
+}
